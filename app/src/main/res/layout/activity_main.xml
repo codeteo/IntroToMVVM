@@ -4,8 +4,8 @@
     android:layout_height="match_parent"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools">
-    tools:context="com.acme.tipcalculator.view.TipCalculatorActivity">
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".view.MainActivity">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
@@ -29,6 +29,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_margin="16dp"
-        android:src="@drawable/ic_money_white_24dp" />
+        app:srcCompat="@drawable/ic_attach_money_white_24dp" />
 
 </android.support.design.widget.CoordinatorLayout>
