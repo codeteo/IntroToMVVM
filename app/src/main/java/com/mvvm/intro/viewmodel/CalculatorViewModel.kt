@@ -1,9 +1,10 @@
 package com.mvvm.intro.viewmodel
 
+import android.databinding.BaseObservable
 import com.mvvm.intro.model.Calculator
 import com.mvvm.intro.model.TipCalculation
 
-class CalculatorViewModel(val calculator: Calculator = Calculator()) {
+class CalculatorViewModel(private val calculator: Calculator = Calculator()) : BaseObservable() {
 
     var inputCheckAmount = ""
 
@@ -18,8 +19,16 @@ class CalculatorViewModel(val calculator: Calculator = Calculator()) {
 
         if (checkAmount != null && tipPct != null) {
             tipCalculation = calculator.calculateTip(checkAmount, tipPct)
+            clearInputs()
         }
 
+    }
+
+    private fun clearInputs() {
+        inputCheckAmount = "0.00"
+        inputTipPercentage = "0"
+
+        notifyChange()
     }
 
 }
