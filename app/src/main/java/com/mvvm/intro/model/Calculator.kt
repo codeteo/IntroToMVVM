@@ -2,7 +2,10 @@ package com.mvvm.intro.model
 
 import java.math.RoundingMode
 
-class RestaurantCalculator {
+/**
+ * Created by teo on 11/6/2018.
+ */
+class Calculator {
 
     fun calculateTip(checkAmount: Double, tipPct: Int): TipCalculation {
 

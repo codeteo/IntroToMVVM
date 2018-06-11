@@ -1,6 +1,6 @@
 package com.mvvm.intro
 
-import com.mvvm.intro.model.RestaurantCalculator
+import com.mvvm.intro.model.Calculator
 import com.mvvm.intro.model.TipCalculation
 import org.junit.Assert.assertEquals
 import org.junit.Before
@@ -8,11 +8,11 @@ import org.junit.Test
 
 class RestaurantCalculatorTest {
 
-    lateinit var calculator: RestaurantCalculator
+    lateinit var calculator: Calculator
 
     @Before
     fun setup() {
-        calculator = RestaurantCalculator()
+        calculator = Calculator()
     }
 
     @Test
